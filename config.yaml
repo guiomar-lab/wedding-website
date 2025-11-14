@@ -1,0 +1,15 @@
+baseURL: "http://hugo-quickstart-template.netlify.com"
+languageCode: "en-us"
+title: "Netlify + Hugo Quickstart"
+theme: "netlify-basic"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+  es:
+    languageName: "Español"
+    weight: 2
+  ua:
+    languageName: "Українська"
+    weight: 3
