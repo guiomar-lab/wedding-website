@@ -3,7 +3,7 @@ title: "Ubicaciones"
 body: |
   <p>Aquí están los lugares clave para nuestra boda:</p>
   <iframe 
-    src="YOUR_GOOGLE_MAPS_EMBED_LINK_HERE" 
+    src="https://www.google.com/maps/d/u/1/edit?mid=1qvaOJoHFpkl67Vy6jf5IDBIteMaqu2A&usp=sharing" 
     width="800" 
     height="600" 
     style="border:0;" 
