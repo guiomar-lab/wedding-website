@@ -1,14 +1,7 @@
 ---
-title: "Locations"
-body: |
-  <p>Here are the key locations for our wedding:</p>
-  <iframe 
-    src="YOUR_GOOGLE_MAPS_EMBED_LINK_HERE" 
-    width="800" 
-    height="600" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+title: "Wedding & Event Locations"
+draft: false
 ---
+
+<iframe src="https://www.google.com/maps/d/u/1/edit?mid=1qvaOJoHFpkl67Vy6jf5IDBIteMaqu2A&usp=sharing" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
