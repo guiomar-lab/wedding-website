@@ -1,24 +1,65 @@
-baseURL: "http://hugo-quickstart-template.netlify.com"
-languageCode: "en-us"
-title: "Netlify + Hugo Quickstart"
-theme: "netlify-basic"
+# ----------------------------
+# Basic site info
+# ----------------------------
+baseURL: "https://igor-guiomar-wedding.pages.dev/"
+languageCode: "en"
+title: "Igor & Guiomar Wedding"
+theme: "hugo-serif"
+paginate: 10
 
+# ----------------------------
+# Multilingual configuration
+# ----------------------------
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+  es:
+    languageName: Español
+    weight: 2
+  ua:
+    languageName: Українська
+    weight: 3
+
+# ----------------------------
+# Color palette
+# ----------------------------
 params:
   colors:
-    primary: "#CBE2CE"     # most relevant
-    secondary: "#FCEDF3"
+    dust-pink: "#FCEDF3"   # was secondary
+    sage-green: "#CBE2CE"        # was primary
     darkgreen: "#004225"
     burgundy: "#722F37"
     taupe: "#98817B"
 
+# ----------------------------
+# Menus
+# ----------------------------
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: travel
+      name: Travel & Accommodation
+      url: /travel/
+      weight: 2
+    - identifier: program
+      name: Wedding Program
+      url: /wedding-program/
+      weight: 3
+    - identifier: excursions
+      name: Excursions
+      url: /excursions/
+      weight: 4
+    - identifier: calendar
+      name: Calendar
+      url: /calendar/
+      weight: 5
+    - identifier: map
+      name: Map
+      url: /map/
+      weight: 6
 
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-  es:
-    languageName: "Español"
-    weight: 2
-  ua:
-    languageName: "Українська"
-    weight: 3
