@@ -3,6 +3,15 @@ languageCode: "en-us"
 title: "Netlify + Hugo Quickstart"
 theme: "netlify-basic"
 
+params:
+  colors:
+    primary: "#CBE2CE"     # most relevant
+    secondary: "#FCEDF3"
+    darkgreen: "#004225"
+    burgundy: "#722F37"
+    taupe: "#98817B"
+
+
 languages:
   en:
     languageName: "English"
