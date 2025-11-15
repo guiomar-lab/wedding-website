@@ -1,6 +1,6 @@
 // Any variables that need to use Hugo configuration need to be declared here
 // ----------------------------
-// Colors (from Hugo config)
+// Colors from Hugo config
 // ----------------------------
 $primary: {{ .Site.Params.colors.dust-pink | default "#FCEDF3" }};
 $secondary: {{ .Site.Params.colors.sage-green | default "#CBE2CE" }};
@@ -13,7 +13,7 @@ $white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
 $grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
 
 // ----------------------------
-// Fonts (hardcoded to avoid build errors)
+// Fonts (hardcoded to prevent build error)
 // ----------------------------
 $font-family-base: "Roboto", Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: "Playfair Display", serif, -apple-system;
