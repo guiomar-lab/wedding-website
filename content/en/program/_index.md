@@ -1,15 +1,17 @@
 ---
 title: "Wedding Program"
-body: |
-  <h2>Ceremony</h2>
-  <p>Time: 4:00 PM</p>
-  <p>Location: Ceremony Venue</p>
-
-  <h2>Reception</h2>
-  <p>Time: 6:00 PM</p>
-  <p>Location: Reception Venue</p>
-
-  <h2>After Party</h2>
-  <p>Time: 9:00 PM</p>
-  <p>Location: After Party Venue</p>
+draft: false
 ---
+
+### Saturday, April 4
+- 11:45 Bus pickup to the venue place
+- 12:10 Guest arrivals
+- 12:30 Ceremony in El Patio
+- 13:15 Cocktail apetizers in El Claustro and group pictures in ?
+- 14:45 Welcome to El Invernadero (restaurant) and First newlyweds waltz
+- 14:50 Lunch & Toasts
+- 18:00 Evening party
+- 23:00 Thank you for the day!
+- 23:15 Bus pickup to the hotel
+
+
