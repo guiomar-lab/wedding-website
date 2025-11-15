@@ -1,22 +1,53 @@
 {{ if .Site.Params.homepage.sticky_header}}
 <div class='header' id="stickyHeader">
+  
 {{ else }}
-<div class='header' >
-{{ end }}
-  <div class="container">
-    <div class="logo">
-      <a href="{{ .Site.Home.RelPermalink }}"><img height={{ .Site.Params.logo.desktop_height }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" /></a>
+  
+<header class="site-header">
+  <div class="container d-flex align-items-center">
+    <!-- Logo -->
+    <div class="site-logo">
+      <a href="{{ "/" | relLangURL }}">
+        <img src="{{ "images/logo.png" | relURL }}" alt="{{ .Site.Title }}">
+      </a>
     </div>
-    <div class="logo-mobile">
-      <a href="{{ .Site.Home.RelPermalink }}"><img height={{ .Site.Params.logo.mobile_height }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
-    </div>
-    {{ partial "main-menu.html" . }}
-    {{ partial "hamburger.html" . }}
-  </div>
-</div>
 
-  <nav class="language-switcher">
-  {{ range .Site.Languages }}
-    <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
-  {{ end }}
-</nav>
+    <!-- Main Menu -->
+    <nav class="main-menu d-none d-md-flex">
+      <ul class="menu-list">
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+
+      <!-- Language Switcher -->
+      <nav class="language-switcher">
+        {{ range .Site.Languages }}
+          <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+        {{ end }}
+      </nav>
+    </nav>
+
+    <!-- Hamburger menu for mobile -->
+    <div class="main-menu-mobile d-md-none">
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu content -->
+  <div class="mobile-menu d-md-none">
+    <ul class="menu-list">
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+      {{ end }}
+      <!-- Mobile language switcher -->
+      {{ range .Site.Languages }}
+        <li><a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</header>
