@@ -72,6 +72,11 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-family: $font-family-base;
+
+  // Set site-wide font color and background
+  color: $darkgreen;          // text color
+  background-color: $secondary; // background color (sage-green)
+
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;
