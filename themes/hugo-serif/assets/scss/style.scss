@@ -13,7 +13,7 @@ $white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
 $grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
 
 // ----------------------------
-// Fonts (hardcoded to prevent build error)
+// Fonts
 // ----------------------------
 $font-family-base: "Roboto", Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: "Playfair Display", serif, -apple-system;
@@ -29,7 +29,7 @@ $font-family-heading: "Playfair Display", serif, -apple-system;
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
 @import 'bootstrap/bootstrap-utilities';
-// @import 'bootstrap/bootstrap'; // Uncomment to import the full Bootstrap library
+// @import 'bootstrap/bootstrap'; // Uncomment if full bootstrap needed
 
 // ----------------------------
 // Libraries
@@ -72,13 +72,92 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-family: $font-family-base;
-
-  // Set site-wide font color and background
-  color: $darkgreen;          // text color
-  background-color: $secondary; // background color (sage-green)
-
+  background-color: $secondary; // sage background
+  color: $darkgreen;             // dark green text
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;
   }
+}
+
+// ----------------------------
+// Headings
+// ----------------------------
+h1, h2, h3, h4, h5, h6 {
+  color: $darkgreen;
+  font-family: $font-family-heading;
+}
+
+// ----------------------------
+// Links
+// ----------------------------
+a {
+  color: $burgundy;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary; // dusty pink on hover
+  }
+}
+
+// ----------------------------
+// Buttons
+// ----------------------------
+.btn-primary {
+  background-color: $primary;
+  color: $darkgreen;
+  border: 1px solid $darkgreen;
+
+  &:hover {
+    background-color: $burgundy;
+    color: $white;
+    border-color: $darkgreen;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  color: $darkgreen;
+  border: 1px solid $darkgreen;
+
+  &:hover {
+    background-color: $darkgreen;
+    color: $white;
+    border-color: $darkgreen;
+  }
+}
+
+// ----------------------------
+// Main Menu
+// ----------------------------
+.main-menu a, .main-menu-mobile a {
+  color: $darkgreen;
+
+  &:hover {
+    color: $burgundy;
+  }
+}
+
+// ----------------------------
+// Strips / Sections / Features
+// ----------------------------
+.strip, .feature {
+  background-color: $secondary;
+  color: $darkgreen;
+}
+
+// ----------------------------
+// Footer
+// ----------------------------
+footer {
+  background-color: $primary;
+  color: $darkgreen;
+}
+
+// ----------------------------
+// Other accents
+// ----------------------------
+.call-to-action {
+  background-color: $primary;
+  color: $darkgreen;
 }
