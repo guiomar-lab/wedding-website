@@ -27,16 +27,14 @@ languages:
 # ----------------------------
 params:
   colors:
-    dust-pink: "#FCEDF3"   # was secondary
-    sage-green: "#CBE2CE"        # was primary
+    dust-pink: "#FCEDF3"
+    sage-green: "#CBE2CE"
     darkgreen: "#004225"
     burgundy: "#722F37"
     taupe: "#98817B"
-
   fonts:
     base: "Roboto"
     heading: "Playfair Display"
-
 
 # ----------------------------
 # Menus
