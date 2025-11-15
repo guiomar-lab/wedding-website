@@ -109,7 +109,7 @@ a {
   border: 1px solid $darkgreen;
 
   &:hover {
-    background-color: $burgundy;
+    background-color: $taupe;
     color: $white;
     border-color: $darkgreen;
   }
@@ -175,7 +175,7 @@ a {
   }
 
   &:hover span {
-    background-color: $burgundy;
+    background-color: $taupe;
   }
 }
 
@@ -203,3 +203,39 @@ footer {
   background-color: $primary;
   color: $darkgreen;
 }
+
+// ----------------------------
+// Language Switcher
+// ----------------------------
+.language-switcher {
+  display: flex;
+  flex-wrap: wrap; // ensures it works on mobile
+  justify-content: flex-end; // right-align
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+
+  a {
+    color: $darkgreen; // font color
+    font-weight: 600;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+      color: $taupe; // hover color
+      text-decoration: none; // keep it clean
+    }
+  }
+
+  // Mobile-friendly adjustments
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+    margin: 0.5rem 0;
+    a {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      font-size: 0.95rem;
+    }
+  }
+}
+
