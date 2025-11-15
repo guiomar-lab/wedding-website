@@ -27,8 +27,8 @@ languages:
 # ----------------------------
 params:
   colors:
-    dust-pink: "#FCEDF3"
-    sage-green: "#CBE2CE"
+    dust_pink: "#FCEDF3"
+    sage_green: "#CBE2CE"
     darkgreen: "#004225"
     burgundy: "#722F37"
     taupe: "#98817B"
