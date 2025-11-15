@@ -14,3 +14,11 @@
     {{ partial "hamburger.html" . }}
   </div>
 </div>
+
+  <div class="language-switcher">
+  {{ range .Site.Languages }}
+    {{ if ne .Lang $.Site.Language.Lang }}
+      <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+    {{ end }}
+  {{ end }}
+</div>
