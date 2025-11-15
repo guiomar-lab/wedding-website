@@ -2,8 +2,8 @@
 // ----------------------------
 // Colors from Hugo config
 // ----------------------------
-$primary: {{ .Site.Params.colors.dust-pink | default "#FCEDF3" }};
-$secondary: {{ .Site.Params.colors.sage-green | default "#CBE2CE" }};
+$primary: {{ .Site.Params.colors.dust_pink | default "#FCEDF3" }};
+$secondary: {{ .Site.Params.colors.sage_green | default "#CBE2CE" }};
 $darkgreen: {{ .Site.Params.colors.darkgreen | default "#004225" }};
 $burgundy: {{ .Site.Params.colors.burgundy | default "#722F37" }};
 $taupe: {{ .Site.Params.colors.taupe | default "#98817B" }};
