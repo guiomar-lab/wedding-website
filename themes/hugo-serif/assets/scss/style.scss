@@ -128,15 +128,57 @@ a {
 }
 
 // ----------------------------
-// Main Menu
+// Main Menu - Desktop
 // ----------------------------
-.main-menu a, .main-menu-mobile a {
-  color: $darkgreen;
+.main-menu {
+  background-color: $secondary; // sage background
+  a {
+    color: $darkgreen; // text in dark green
+    font-weight: 600;
+    padding: 0.75rem 1rem;
 
-  &:hover {
-    color: $burgundy;
+    &:hover,
+    &.active {
+      color: $white;      // hover / active text
+      background-color: $darkgreen; // highlight on hover
+      border-radius: 4px;
+    }
   }
 }
+
+// ----------------------------
+// Main Menu - Mobile
+// ----------------------------
+.main-menu-mobile {
+  background-color: $secondary; // sage background
+  a {
+    color: $darkgreen; // text in dark green
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    display: block;
+
+    &:hover,
+    &.active {
+      color: $white;      // hover / active text
+      background-color: $darkgreen; // highlight on hover
+      border-radius: 4px;
+    }
+  }
+}
+
+// ----------------------------
+// Hamburger icon
+// ----------------------------
+.hamburger {
+  span {
+    background-color: $darkgreen;
+  }
+
+  &:hover span {
+    background-color: $burgundy;
+  }
+}
+
 
 // ----------------------------
 // Strips / Sections / Features
