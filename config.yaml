@@ -33,6 +33,11 @@ params:
     burgundy: "#722F37"
     taupe: "#98817B"
 
+  fonts:
+    base: "Roboto"
+    heading: "Playfair Display"
+
+
 # ----------------------------
 # Menus
 # ----------------------------
