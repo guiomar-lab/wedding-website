@@ -1,29 +1,44 @@
 // Any variables that need to use Hugo configuration need to be declared here
-// Colors
-$primary: {{ .Site.Params.colors.primary | default "#f24088" }};
+// ----------------------------
+// Colors (from Hugo config)
+// ----------------------------
+$primary: {{ .Site.Params.colors.dust-pink | default "#FCEDF3" }};
+$secondary: {{ .Site.Params.colors.sage-green | default "#CBE2CE" }};
+$darkgreen: {{ .Site.Params.colors.darkgreen | default "#004225" }};
+$burgundy: {{ .Site.Params.colors.burgundy | default "#722F37" }};
+$taupe: {{ .Site.Params.colors.taupe | default "#98817B" }};
 $black: {{ .Site.Params.colors.black | default "#2f2f41" }};
 $white: {{ .Site.Params.colors.white | default "#ffffff" }};
 $white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
 $grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
 
-// Fonts
+// ----------------------------
+// Fonts (hardcoded to avoid build errors)
+// ----------------------------
 $font-family-base: "Roboto", Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: "Playfair Display", serif, -apple-system;
 
-
-// Variables - Override Bootstrap variables and set your own here
+// ----------------------------
+// Variables - Override Bootstrap variables here
+// ----------------------------
 @import 'variables';
 
+// ----------------------------
 // Bootstrap
+// ----------------------------
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
 @import 'bootstrap/bootstrap-utilities';
-// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+// @import 'bootstrap/bootstrap'; // Uncomment to import the full Bootstrap library
 
+// ----------------------------
 // Libraries
+// ----------------------------
 @import 'libraries/hamburgers/hamburgers';
 
+// ----------------------------
 // Components
+// ----------------------------
 @import 'components/type';
 @import 'components/page';
 @import 'components/header';
@@ -43,11 +58,16 @@ $font-family-heading: "Playfair Display", serif, -apple-system;
 @import 'components/feature';
 @import 'components/social';
 
+// ----------------------------
 // Pages
+// ----------------------------
 @import 'pages/home';
 @import 'pages/team/team-summary';
 @import 'pages/services/page-services-single';
 
+// ----------------------------
+// Body defaults
+// ----------------------------
 body {
   font-size: 16px;
   line-height: 1.2;
